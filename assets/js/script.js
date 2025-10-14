@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Get the current page path
     const currentPath = window.location.pathname;
-    const currentPage = currentPath.split('/').pop() || 'home.html';
+    const currentPage = currentPath.split('/').pop() || 'index.html';
     
     // Set active class based on current page
     navItems.forEach(item => {
