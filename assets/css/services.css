@@ -1,0 +1,258 @@
+.service-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.service-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #B043F4;
+}
+
+.service-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+.service-images{
+    height: 60%;
+    width : 60%;
+    margin-left: 90%;
+}
+
+.service-images-body{
+    height: 30%;
+    width : 30%;
+    margin-left: 110%;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.service-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px purple;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: #B043F4;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.service-benefits {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.service-benefits h2 {
+    color: #B043F4;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service-benefits ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.service-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.service-benefits li i {
+    color: #B043F4;
+    font-size: 1.2rem;
+}
+
+/* Services Overview Page Styles */
+.services-overview {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.services-overview h1 {
+    text-align: center;
+    color: #B043F4;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 350px; /* Fixed height for all cards */
+    justify-content: flex-start; /* Align content from the top */
+}
+
+.service-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+    display: flex;
+    height: 40%;
+    width : 40%;
+    border-radius: 50%;
+}
+
+.service-card h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    height: 40px; /* Fixed height for title */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0; /* Remove any top margin */
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    height: 80px; /* Fixed height for description */
+    display: flex;
+    align-items: flex-start; /* Align text to top of container */
+    justify-content: center;
+    width: 100%;
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.learn-more {
+    color: #B043F4;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: auto; /* Push to bottom of card */
+    width: 100%;
+}
+
+.learn-more i {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .learn-more i {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-container {
+        margin: 1rem auto;
+    }
+
+    .service-icon {
+        font-size: 3rem;
+        transition: transform 0.3s ease;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .service-card:hover .service-icon i,
+    .service-card:hover .service-icon img {
+        transform: scale(1.2);
+    }
+
+    .service-icon img {
+        width: auto;
+        height: 64px;
+        max-width: 80%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        display: block; /* Make sure images are visible */
+    }
+    
+    /* Remove this rule that's hiding the images */
+    /* .service-icon img {
+        display: none;
+    } */
+
+    .service-features {
+        grid-template-columns: 1fr;
+    }
+
+    .service-benefits ul {
+        grid-template-columns: 1fr;
+    }
+
+    .services-overview {
+        margin: 2rem auto;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+}
