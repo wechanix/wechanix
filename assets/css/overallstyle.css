@@ -506,7 +506,8 @@ footer {
     height: 40px;
     border-radius: 50%;
     border: 2px solid #fff;
-    color: #fff;
+    background: #B043F4;
+    color: #B043F4;
     font-size: 1rem;
     transition: all 0.3s ease-in-out;
 }
