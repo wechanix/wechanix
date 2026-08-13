@@ -1,121 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Wechanix Technologies</title>
-    <link rel="stylesheet" href="./assets/css/overallstyle.css">
-    <link rel="stylesheet" href="./assets/css/services.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Wechanix Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <img src="./assets/images/final.png" alt="Company Logo" class="logo">
-        </div>
-        <div class="header-content">
-            <h2 class="company-name">Wechanix Technologies Private Limited</h2>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav class="nav-bar">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="./events.html" class="nav-item">Events</a>
-                <div class="dropdown">
-                    <button class="dropbtn nav-item active" onclick="window.location.href='./services.html'">Services
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="golang.html">
-                            <span>Golang</span> 
-                        </a>
-                        <a href="reactjs.html">
-                            <span>React JS</span> 
-                        </a>
-                        <a href="flutter.html">
-                            <span>Flutter</span>                 
-                        </a>
-                    </div>
-                </div>
-                <a href="./galleries.html" class="nav-item">Galleries</a>
-                <a href="./products.html" class="nav-item">Products</a>
-                <a href="./contact.html" class="nav-item">Contacts</a>
-            </nav>
- 
-        </div>
-    </header>
 
-    <div class="main-container">
-            <div class="services-overview">
-                <h1>Our Services</h1>
-                <div class="services-grid">
-                    <a href="golang.html" class="service-card golang">
-                        <div class="service-icon">
-                            <img src="./assets/images/go-8x.png" alt="Golang Icon" class="service-images">
-                        </div>
-                        <h2>Golang</h2>
-                        <p>High-performance backend solutions with efficient microservices architecture</p>
-                        <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
-                    </a>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Wechanix-Logo.png" alt="Wechanix Technologies" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="galleries.html">Galleries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-cta">Get Started</a>
+    </div>
+  </header>
 
-                    <a href="reactjs.html" class="service-card react">
-                        <div class="service-icon">
-                            <img src="./assets/images/service-react.png" alt="React Icon" class="service-images">
-                        </div>
-                        <h2>React JS</h2>
-                        <p>Modern and responsive web applications with interactive user interfaces</p>
-                        <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
-                    </a>
-
-                    <a href="flutter.html" class="service-card flutter">
-                        <div class="service-icon">
-                            <img src="./assets/images/icons8-flutter-240.png" alt="Flutter Icon" class="service-images" style="border-radius: 50%;">
-                        </div>
-                        <h2>Flutter</h2>
-                        <p>Cross-platform mobile app development with native-like performance</p>
-                        <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
-                    </a>
-                </div>
-            </div>
+  <main>
+    <div class="page-title-banner">
+      <h1>Engineering Capabilities</h1>
+      <p>Specialized software development and digital transformation capabilities.</p>
     </div>
 
-   <footer>
-       <div class="footer-container" >
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <p> <span class="contact-icon" style = "color : #B043F4">&#9742;</span> 8489136128</p>
-                <p> <span class="contact-icon" style = "color : #B043F4">&#9990;</span> 04562 254564</p>
-                <p> <span class="contact-icon" style = "color : #B043F4">&#9993;</span> support@wechanix.com</p>
-            </div>
-            
-            <div class="footer-section">
-                <div class="address">
-                    <p>
-                        <!-- <i class="fas fa-map-marker-alt" style="color:darkorchid"></i> -->
-                        #6/954 E10, Lakshmi Complex, Asari Colony,
-                    </p>
-                    <p>Satchiyapuram, Sivakasi,</p>
-                    <p>Tamil Nadu,</p>
-                    <p>India 626 124.</p>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Follow Us On</h3>
-                <div class="social-icons" style = "color:white;">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/wechanix-technologies/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/wechanix_technologies" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+    <section>
+      <!-- Golang Block -->
+      <div class="service-block">
+        <div class="tech-badge-icon"><i class="devicon-go-original-wordmark colored"></i></div>
+        <div>
+          <h2>GoLang Microservices & Backend</h2>
+          <p>Robust server-side development leveraging Go's lightweight goroutines to handle microservice architecture, API gateways, and distributed cloud computing environments.</p>
+          <div class="pills">
+            <span class="pill">RESTful & gRPC APIs</span>
+            <span class="pill">Microservices Architecture</span>
+            <span class="pill">Cloud Native Backend</span>
+          </div>
+          <a href="golang.html" style="color: var(--primary-light); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 1rem;">View Go Details <i data-lucide="arrow-right" size="14"></i></a>
         </div>
-        
-        <div class="copyright">
-            © 2026 Wechanix Technologies Private Limited. All rights reserved.
-        </div>
-    </footer>
+      </div>
 
-    <script src="./assets/js/script.js"></script>
+      <!-- React Block -->
+      <div class="service-block">
+        <div class="tech-badge-icon"><i class="devicon-react-original colored"></i></div>
+        <div>
+          <h2>React JS Web Applications</h2>
+          <p>End-to-end frontend development using modern React, state management, and server-side rendering for enterprise portals, analytics dashboards, and web stores.</p>
+          <div class="pills">
+            <span class="pill">Single Page Apps (SPA)</span>
+            <span class="pill">Interactive Dashboards</span>
+            <span class="pill">Custom E-Commerce</span>
+          </div>
+          <a href="react.html" style="color: var(--primary-light); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 1rem;">View React Details <i data-lucide="arrow-right" size="14"></i></a>
+        </div>
+      </div>
+
+      <!-- Angular Block -->
+      <div class="service-block">
+        <div class="tech-badge-icon"><i class="devicon-angular-plain colored"></i></div>
+        <div>
+          <h2>Angular Enterprise Web Development</h2>
+          <p>Strictly typed, enterprise-scale web platform engineering using Angular and TypeScript. Ideal for complex corporate platforms requiring structured architectures.</p>
+          <div class="pills">
+            <span class="pill">TypeScript Integration</span>
+            <span class="pill">Enterprise Workflows</span>
+            <span class="pill">RxJS Reactive Streams</span>
+          </div>
+          <a href="angular.html" style="color: var(--primary-light); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 1rem;">View Angular Details <i data-lucide="arrow-right" size="14"></i></a>
+        </div>
+      </div>
+
+      <!-- Flutter Block -->
+      <div class="service-block">
+        <div class="tech-badge-icon"><i class="devicon-flutter-plain colored"></i></div>
+        <div>
+          <h2>Flutter Cross-Platform Apps</h2>
+          <p>Delivering native performance and visual elegance across iOS and Android platforms with Flutter, enabling accelerated release cycles and unified codebases.</p>
+          <div class="pills">
+            <span class="pill">Cross-Platform iOS/Android</span>
+            <span class="pill">Custom UI Widgets</span>
+            <span class="pill">Unified Codebase</span>
+          </div>
+          <a href="flutter.html" style="color: var(--primary-light); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 1rem;">View Flutter Details <i data-lucide="arrow-right" size="14"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wechanix Technologies Private Limited. All rights reserved.</p>
+  </footer>
+
+  <script>lucide.createIcons();</script>
 </body>
 </html>

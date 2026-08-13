@@ -1,150 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Wechanix Technologies</title>
-    <link rel="stylesheet" href="./assets/css/overallstyle.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Wechanix Technologies</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <img src="./assets/images/final.png" alt="Company Logo" class="logo">
-        </div>
-        <div class="header-content">
-            <h2 class="company-name">Wechanix Technologies Private Limited</h2>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav class="nav-bar">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="events.html" class="nav-item">Events</a>
-                <div class="dropdown">
-                    <button class="dropbtn " onclick="window.location.href='./services.html'">Services
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="golang.html">
-                            <span>Golang</span> 
-                        </a>
-                        <a href="reactjs.html">
-                            <span>React JS</span> 
-                        </a>
-                        <a href="flutter.html">
-                            <span>Flutter</span>                 
-                        </a>
-                    </div>
-                </div>
-                <a href="galleries.html" class="nav-item">Galleries</a>
-                <a href="products.html" class="nav-item">Products</a>
-                <a href="contact.html" class="nav-item active">Contacts</a>
-            </nav>
-        </div>
-    </header>
-    <div class="main-container">
-        <section class="contact-section">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Get in Touch</h2>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Wechanix Technologies Private Limited</h3>
-                            <p>#6/954E10, Asari Colony, Satchiyapuram,
-                                Sivakasi, Anaiyur, Virudhunagar,</p>
-                                <p>Tamil Nadu-626124,India</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>04562 254564</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Gmail</h3>
-                            <p>support@wechanix.com</p>
-                            <p>marialurduraj.a@wechanix.com</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-icon-contact"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon-contact"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/company/wechanix-technologies/" target="_blank" class="social-icon-contact"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/wechanix_technologies" target="_blank" class="social-icon-contact"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <!-- <div class="contact-form">
-                    <h2>Send us a Message</h2>
-                    <form id="contactForm" onsubmit="sendEmail(event)">
-                        <div class="form-group">
-                            <input type="text" id="name" required>
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" required>
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" required>
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div> -->
-            </div>
-        </section>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Wechanix-Logo.png" alt="Wechanix Technologies" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="galleries.html">Galleries</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-cta">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title-banner">
+      <h1>Connect With Us</h1>
+      <p>Have a product idea or engineering requirement? Reach out to our team directly.</p>
     </div>
 
-   <footer>
-        <div class="footer-container" >
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <p> <span class="contact-icon" style = "color : #B043F4">&#9742;</span> 84891 36128</p>
-                <p> <span class="contact-icon" style = "color : #B043F4">&#9990;</span> 04562 254564</p>
-                <p> <span class="contact-icon" style = "color : #B043F4">&#9993;</span> support@wechanix.com</p>
-            </div>
-            
-           <div class="footer-section">
-                <h3>Address Info</h3>
-                <div class="address">
-                    <p>
-                        <!-- <i class="fas fa-map-marker-alt" style="color:darkorchid"></i> -->
-                        #6/954 E10, Lakshmi Complex, Asari Colony,
-                    </p>
-                    <p>Satchiyapuram, Sivakasi,</p>
-                    <p>Tamil Nadu,</p>
-                    <p>India 626 124.</p>
-                </div>
-            </div> 
+    <section>
+      <div class="contact-wrapper">
+        <div>
+          <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem;">Corporate Address</h2>
+          <p style="color: var(--text-muted);">Wechanix Technologies Private Limited is committed to delivering top-tier digital engineering solutions.</p>
 
-            <div class="footer-section">
-                <h3>Follow Us On</h3>
-                <div class="social-icons" style = "color:white;">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/wechanix-technologies/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/wechanix_technologies" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                </div>
+          <div class="info-list">
+            <div class="info-item">
+              <i data-lucide="smartphone"></i>
+              <div>
+                <strong style="color: #FFF;">Mobile</strong>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">+91 70104 35142</p>
+              </div>
             </div>
 
-        </div>
-        
-        <div class="copyright">
-            © 2026 Wechanix Technologies Private Limited. All rights reserved.
-        </div>
-    </footer>
+            <div class="info-item">
+              <i data-lucide="phone"></i>
+              <div>
+                <strong style="color: #FFF;">Telephone</strong>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">+91 4562 452564</p>
+              </div>
+            </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="script.js"></script>
+            <div class="info-item">
+              <i data-lucide="mail"></i>
+              <div>
+                <strong style="color: #FFF;">Email Support</strong>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">support@wechanix.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i data-lucide="map-pin"></i>
+              <div>
+                <strong style="color: #FFF;">Registered Office Address</strong>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                  #6/954 E10, Lakshmi Complex, Asari Colony,<br>
+                  Satchiyapuram, Sivakasi,<br>
+                  Tamil Nadu, India - 626 124
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Hidden Access Key -->
+          <input type="hidden" name="access_key" value="f01a9c4c-3f3a-4b8c-9a5c-73986cc87a4b">
+
+          <!-- Email Subject -->
+          <input type="hidden" name="subject" value="New Contact Inquiry from Wechanix Website">
+
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone Number">
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="4" placeholder="Briefly describe your project requirements..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-cta" style="border: none; cursor: pointer; text-align: center;">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wechanix Technologies Private Limited. All rights reserved.</p>
+  </footer>
+
+  <script>lucide.createIcons();</script>
 </body>
 </html>

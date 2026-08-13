@@ -1,99 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wechanix Technologies</title>
-    <link rel="stylesheet" href="./assets/css/overallstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wechanix Technologies | Custom Software & App Development</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Devicon CDN for Language Logos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <img src="./assets/images/final.png" alt="Company Logo" class="logo">
-        </div>
-        <div class="header-content">
-            <h2 class="company-name">Wechanix Technologies Private Limited</h2>
-            <!-- <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div> -->
-            <nav class="nav-bar">
-                <a href="index.html" class="nav-item active">Home</a>
-                <a href="./events.html" class="nav-item" >Events</a>
-                <div class="dropdown">
-                    <button class="dropbtn nav-item" onclick="window.location.href='./services.html'">Services
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="golang.html"><span>Golang</span></a>
-                        <a href="reactjs.html"><span>React JS</span></a>
-                        <a href="flutter.html"><span>Flutter</span></a>
-                    </div>
-                </div>
-                <a href="./galleries.html" class="nav-item" >Galleries</a>
-                <a href="./products.html" class="nav-item" >Products</a>
-                <a href="./contact.html" class="nav-item" >Contacts</a>
-            </nav>
-        </div>
-    </header>
 
-    <div class="main-container">
-        <section class="home">
-            <div class="image-slider">
-                <div class="slider-arrow prev-arrow">
-                    <i class="fas fa-chevron-left"></i>
-                </div>
-                <div class="homeimage">
-                    <img src="./assets/images/desktop-app-development.jpg" alt="Web Development" class="home-img2">
-                   <img src="./assets/images/ecommerce-app-development.jpg" alt="E-Commerce App Development " class="home-img active">
-                    <img src="./assets/images/mobile-app-development.jpg" alt="Mobil App Development" class="home-img active">
-                </div>
-                <div class="slider-arrow next-arrow">
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </div>
-        </section>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Wechanix-Logo.png" alt="Wechanix Technologies" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="galleries.html">Galleries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-cta">Get Started</a>
     </div>
+  </header>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <!-- <p><span class="contact-icon"><i class="fa fa-mobile-phone" style="font-size:24px; color:darkorchid;"></i></span>    8489136128</p> -->
-                <p><span class="contact-icon" style="color: darkorchid">&#9990;</span> 7010435142</p>
-                <p><span class="contact-icon" style="color: darkorchid">&#9993;</span> support@wechanix.com</p>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="badge"><i data-lucide="zap" size="14"></i> Engineering Digital Platforms</div>
+      <h1>Building Scalable <span>Software Systems</span></h1>
+      <p>Wechanix Technologies Private Limited crafts high-throughput backend services, enterprise web applications, and fluid cross-platform mobile products.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn-cta" style="padding: 0.85rem 1.8rem; font-size: 1rem;">Start Your Project</a>
+        <a href="services.html" class="btn-cta" style="background: transparent; border: 1px solid var(--border); padding: 0.85rem 1.8rem; font-size: 1rem; box-shadow: none;">Explore Services</a>
+      </div>
 
-            <div class="footer-section">
-                <div class="address">
-                    <p>
-                        <!-- <i class="fas fa-map-marker-alt" style="color:darkorchid"></i> -->
-                        #6/954 E10, Lakshmi Complex, Asari Colony,
-                    </p>
-                    <p>Satchiyapuram, Sivakasi,</p>
-                    <p>Tamil Nadu,</p>
-                    <p>India 626 124.</p>
-                </div>
-            </div>
+      <div class="tech-stack-strip">
+        <a href="golang.html" class="tech-item"><i class="devicon-go-original-wordmark colored"></i> Go (Golang)</a>
+        <a href="react.html" class="tech-item"><i class="devicon-react-original colored"></i> React JS</a>
+        <a href="angular.html" class="tech-item"><i class="devicon-angular-plain colored"></i> Angular</a>
+        <a href="flutter.html" class="tech-item"><i class="devicon-flutter-plain colored"></i> Flutter Framework</a>
+      </div>
+    </section>
 
-            <div class="footer-section">
-                <h3>Follow Us On</h3>
-                <div class="social-icons" style="color:white;">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/wechanix-technologies/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/wechanix_technologies" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+    <section>
+      <div class="section-header">
+        <h2>Why Partner With Us</h2>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon"><i data-lucide="cpu"></i></div>
+          <h3>High-Performance Architecture</h3>
+          <p>Concurrent server-side solutions engineered using Golang for low memory overhead and lightning response rates.</p>
         </div>
-        <div class="copyright">
-            © 2026 Wechanix Technologies Private Limited. All rights reserved.
+        <div class="card">
+          <div class="card-icon"><i data-lucide="layout"></i></div>
+          <h3>Modern Web Ecosystems</h3>
+          <p>Intuitive Single Page Applications (SPAs) built with React.js ensuring seamless real-time client experience.</p>
         </div>
-    </footer>
+        <div class="card">
+          <div class="card-icon"><i data-lucide="smartphone"></i></div>
+          <h3>Cross-Platform Mobile</h3>
+          <p>Native-performing mobile apps built on Flutter for both Android and iOS from a single robust codebase.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/image-slider.js"></script>
+  <footer>
+    <p>&copy; 2026 Wechanix Technologies Private Limited. All rights reserved.</p>
+  </footer>
+
+  <script>lucide.createIcons();</script>
 </body>
 </html>
